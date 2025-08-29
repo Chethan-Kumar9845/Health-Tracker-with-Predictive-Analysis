@@ -31,9 +31,10 @@ A web-based health tracking system that allows users to log their health data, m
 ```bash
 git clone https://github.com/your-username/health-tracker-with-predictive-analysis.git
 cd health-tracker-with-predictive-analysis
+ ```
 
+### 3️⃣ Move Project to XAMPP `htdocs`
 
-### 3️⃣ Move Project to XAMPP `htdocs`  
 Place the project folder inside:  
 - **Windows:** `C:\xampp\htdocs\`  
 - **Linux:** `/opt/lampp/htdocs/`  
@@ -51,8 +52,7 @@ $host = "localhost";
 $user = "root";
 $password = "";
 $database = "health_tracker";
-
-
+```
 
 ---
 
