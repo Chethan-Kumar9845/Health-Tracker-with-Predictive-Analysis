@@ -1,0 +1,554 @@
+/* Author: Chethan Kumar
+AIET Mijar*/
+/* General Body Styling */
+body.home-bg {
+ height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  animation: changeBackground 20s infinite; /* Change background every 5s (15s for 3 images) */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition of the image */
+
+
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('image/bg1.png');
+  }
+  33% {
+    background-image: url('image/bg_2.jpg');
+  }
+  66% {
+    background-image: url('image/bg3.jpeg');
+  }
+  100% {
+    background-image: url('image/bg1.png'); /* Loop back to the first image */
+  }
+}
+
+
+/* Container Styling */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black background for readability */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.index_p {
+  font-size: 1.5rem; /* Slightly increase font size */
+ 
+  padding: 10px; /* Add some padding around the text */
+background-color: rgba(60, 179, 113, 0.6); /* Medium sea green */
+color: white; /* White text for readability */
+
+}
+
+/* Form Label Styling */
+form label {
+  display: block; /* Forces the label to be on its own line */
+  font-size: 1.4em;
+  margin: 15px 0 5px;
+  color: #ccc;
+}
+
+/* Ensure input fields are also displayed as block-level elements */
+form input {
+  display: block; /* Forces the input to be on a new line below the label */
+  width: 90%; /* Set the width to 90% to make it responsive */
+  padding: 10px;
+  margin: 10px 0; /* Add margin to give space around the input */
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333;
+  background: #f2f2f2;
+}
+
+/* Add a focus effect on the input */
+form input:focus {
+  outline: none;
+  border: 2px solid #00ffcc;
+  background: #fff;
+}
+
+/* Input Field Focus Effect */
+form input:focus {
+    outline: none;
+    border: 2px solid #00ffcc;
+    background: #fff;
+}
+
+/* Button Styling */
+button {
+    width: 90%;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #00ffcc, #007bff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #007bff, #00ffcc);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+.logout-btn {
+  position: absolute; /* Position relative to the page */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  background-color: #ff4d4d; /* Eye-catching red */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding for button effect */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Bold text for emphasis */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.logout-btn:hover {
+  background-color: #e60000; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+
+/* Style for login page */
+
+/* style.css */
+
+/* Login page background */
+body.login-bg {
+  background-image: url('image/home_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Center the login form */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form inputs and button */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+/* Background for the registration page */
+.register-bg {
+  background-image: url('image/register_bg.jpeg'); /* Set the image path */
+  background-size: contain;  /* This ensures the entire image is visible, scaling to fit the container */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white; /* Optional: if you need the text to be white */
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Style for the container that holds the registration form */
+.container {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+/* Ensure labels and inputs are displayed in a block (vertically stacked) */
+.form-group {
+
+  margin-bottom: 15px; /* Add some space between the form fields */
+}
+
+label {
+  margin-bottom: 5px; /* Add space below the label */
+}
+
+input {
+  width: 100%; /* Ensure input fields span the entire width of the container */
+  padding: 10px;
+  margin: 5px 0; /* Add spacing between inputs */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  font-size: 17px;
+}
+textarea {
+  resize: none; /* Disable manual resizing */
+  height: 100px; /* Adjust the height */
+  width: 100%; /* Match the width of other inputs */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 100px; /* Larger box for address */
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.success-message {
+  background-color: whitesmoke;
+  color: rgb(12, 227, 12);
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+/* Ensure labels are displayed as block-level elements */
+form label {
+  display: block; /* Forces the label to be on its own line */
+  font-size: 1.4em;
+  margin: 15px 0 5px;
+  color: #ccc;
+}
+
+/* Ensure input fields are also displayed as block-level elements */
+form input {
+  display: block; /* Forces the input to be on a new line below the label */
+  width: 90%; /* Set the width to 90% to make it responsive */
+  padding: 10px;
+  margin: 10px 0; /* Add margin to give space around the input */
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333;
+  background: #f2f2f2;
+}
+
+/* Add a focus effect on the input */
+form input:focus {
+  outline: none;
+  border: 2px solid #00ffcc;
+  background: #fff;
+}
+
+/* Styles specific to the registration page */
+
+/* Background for the register page */
+.register-bg {
+  background-image: url('image/register_bg.jpeg'); /* Set the image path */
+  background-size: contain; /* This ensures the entire image is visible, scaling to fit the container */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white; /* Optional: if you need the text to be white */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the container that holds the registration form */
+.register-bg .container {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.register-bg h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: white; /* Ensure h1 text color is white */
+}
+
+.register-bg form {
+  margin-top: 20px;
+}
+
+/* Ensure labels and inputs are displayed in a block (vertically stacked) */
+.register-bg .form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  align-items: flex-start; /* Align both label and input to the left */
+  margin-bottom: 15px; /* Add some space between the form fields */
+  width: 100%;
+}
+
+.register-bg label {
+  margin-bottom: 5px; /* Add space below the label */
+  font-size: 1.4em;
+  color: #ccc;
+  display: block; /* Ensure the label is on its own line */
+}
+
+.register-bg input, .register-bg textarea {
+  width: 100%; /* Ensure input fields and textareas span the entire width of the container */
+  padding: 10px;
+  margin: 5px 0; /* Add spacing between inputs */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Input field focus effect */
+.register-bg input:focus, .register-bg textarea:focus {
+  outline: none;
+  border: 2px solid #00ffcc;
+  background: #fff;
+}
+
+/* Style for the register button */
+.register-bg button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px; /* Add space above button */
+}
+
+.register-bg button:hover {
+  background-color: #45a049;
+}
+
+/* Success and error message styles */
+.register-bg .success-message {
+  color: green;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.register-bg .error-message {
+  color: red;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Style for the link (e.g., for sign-up or login) */
+.register-bg a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.register-bg h1{
+  color: #007BFF;
+}
+/* Style for the form container */
+.register-bg .register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.register-bg textarea {
+  width:100%;
+  resize: none; /* Disable manual resizing */
+  height: 100px; /* Adjust the height */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.register-bg p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.register-bg .register-form input, .register-bg .register-form textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.register-bg button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-bg button:hover {
+  background-color: #0056b3;
+}
+
+/*report css */
+.report-container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.report-container h3 {
+  color: #2c3e50;
+}
+
+.report-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+.back-btn{
+  color: red;
+  background-color: #ccc;
+  border: 1px solid #21efeb;
+  padding: 10px;
+  text-align: left;
+  justify-content: left;
+}
